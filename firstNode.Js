@@ -3,6 +3,7 @@
 
 const http = require('http')
 const port = 3000
+
 const fs = require('fs')
 
 const server = http.createServer(function(req, res) {
@@ -17,9 +18,7 @@ const server = http.createServer(function(req, res) {
         }
         res.end()
     })
-   
 
-})
 
 server.listen(port,function(error) {
     if (error) {
@@ -27,4 +26,6 @@ server.listen(port,function(error) {
     } else {
         console.log('server listerning on port ' + port)
     }
-})
+
+
+}
